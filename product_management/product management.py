@@ -38,7 +38,6 @@ def search (name):
 def display ():
     if len (product)==0:
         print(" there are no items! ")
-        continue
     for i, name in enumerate(product):
         print (f"{i+1}: {name} with the price of {price[i]}")
 for i in range (100):
