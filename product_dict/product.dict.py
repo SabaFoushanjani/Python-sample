@@ -31,8 +31,8 @@ def search (name):
         if name in i:
             print (f"{i} ------> {product [i]}")
             flag= False
-            if flag:
-                print ("not found! ")
+    if flag:
+        print ("not found! ")
 def details ():
     d= input ("choose an item: number of products, average, min, max: ") . lower ()
     if d== "number of products":
@@ -59,6 +59,7 @@ while True:
     elif answer== "remove":
         name= input ("name for remove: ")
         remove (name)
+        display ()
     elif answer== "edit":
         name= input ("name for edit: ")
         edit (name)
